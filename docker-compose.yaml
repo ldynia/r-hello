@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  app:
+    build:
+      context: ./app
+      dockerfile: ../docker/Dockerfile
+    image: ldynia/r-app:dev
+    container_name: r-app-dev
+    hostname: r-app-dev
+    volumes:
+      - ./app:/app
